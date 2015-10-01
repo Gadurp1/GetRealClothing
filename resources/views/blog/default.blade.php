@@ -11,7 +11,7 @@
         <meta property="article:author" content="https://www.facebook.com/KeepHavingAGoodDay" />
         <meta property="article:publisher" content="https://www.facebook.com/KeepHavingAGoodDay" />
         <meta property="og:image" content="{{$blog->image}}" />
-        <title>Material Admin</title>
+        <title>{{$blog->name}}</title>
 
             <!-- Vendor CSS -->
         <link href="{{ asset('assets/css/simpletextrotator.css')}}" rel="stylesheet">
