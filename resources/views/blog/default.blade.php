@@ -10,7 +10,7 @@
         <meta property="og:type" content="article" />
         <meta property="article:author" content="https://www.facebook.com/KeepHavingAGoodDay" />
         <meta property="article:publisher" content="https://www.facebook.com/KeepHavingAGoodDay" />
-        <meta property="og:image" content="{{$blog->image}}" />
+        <meta property="og:image" content="{{asset($blog->image)}}" />
         <title>{{$blog->name}}</title>
 
             <!-- Vendor CSS -->
