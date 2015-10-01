@@ -23,14 +23,9 @@
         <link href="{{ asset('assets/css/animate.css')}}" rel="stylesheet">
         <link href="{{ asset('assets/css/style.css')}}" rel="stylesheet">
         <link href="{{ asset('vendors/bower_components/sweetalert/dist/sweetalert2.css')}}" rel="stylesheet">
-
-                <link href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/4.0.1/dropzone.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/4.0.1/dropzone.css" rel="stylesheet">
         <script src="{{ asset('vendors/bower_components/sweetalert/dist/sweetalert2.min.js')}}"></script>
-
-
-
 <script src="https://cdnjs.cloudflare.com/ajax/libs/dropzone/4.0.1/dropzone.js"></script>
-
 <script src="{{ asset('vendors/bower_components/sweetalert/dist/sweetalert2.min.js')}}"></script>
  <script src="//code.jquery.com/jquery-1.9.1.js"></script> 
   <!-- include libraries BS3 -->
