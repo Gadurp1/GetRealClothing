@@ -91,7 +91,7 @@
                     'publish' => 'publish', 
                     'draft' => 'draft', 
 
-                ],null, ['class'=>' selectpicker form-control']); 
+                ],$blog->status, ['class'=>' selectpicker form-control']); 
           !!}
 
 <hr>
