@@ -1,5 +1,8 @@
 @extends('blog.default')
 
+@section('content')
+
+
 <!-- Modal -->
 <div id="myModal" class="modal fade" role="dialog">
   <div class="modal-dialog">
@@ -23,9 +26,6 @@
 
   </div>
 </div>
-@section('content')
-
-
 
 <!-- Go to www.addthis.com/dashboard to customize your tools -->
 <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-560b5c2d52b4b2a8" async="async"></script>
