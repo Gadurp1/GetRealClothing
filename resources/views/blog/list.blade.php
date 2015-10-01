@@ -1,4 +1,4 @@
-@extends('blog.default')
+@extends('default')
 @section('content')
 
 
