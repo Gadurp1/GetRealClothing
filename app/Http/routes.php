@@ -42,7 +42,7 @@ Route::post('blog/{id}/photo','BlogController@addPhoto');      // Adding Photos 
 Route::post('blog/create','BlogController@store');
 Route::get('/Recent-Posts', function () {                      // Blog Feed Page
 
-	$blog=\App\Blog::get();
+	$blog=\App\Blog::where('status','publish')->get();
     return view('blog.list',compact('blog'));
 
 });
