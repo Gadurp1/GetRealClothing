@@ -108,19 +108,14 @@
         <hr>
 
 
-	        {!! Form::label('status','Status') !!}
+	    {!! Form::label('status','Status') !!}
             {!! Form::select('status', 
                 [
-                    'sales' => '', 
-                    'sales' => 'Sales', 
+                    'publish' => '', 
+                    'draft' => 'Sales', 
 
-                ],null, ['class'=>' selectpicker form-control']); 
+                ],$blog->status, ['class'=>' selectpicker form-control']); 
             !!}
-
-
-
-
-
 
  <button type="submit" class="btn btn-success  btn-block col-md-12">Save New Post!</button>
     <hr>
