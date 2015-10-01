@@ -47,7 +47,14 @@
 
     </head>
     <body>
-
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4&appId=495527587195886";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
     @include('partials.header')
     <!-- Navigation end -->
 
@@ -78,11 +85,13 @@
     
                 <div class="row">
     
-                    <div class="col-sm-6">
+                    <div class="col-sm-3">
                         <p class="copyright font-alt">© 2015 <a href="index.html">GET REAL.</a> All Rights Reserved.</p>
                     </div>
-    
-                    <div class="col-sm-6">
+                    <div class="col-sm-3">
+                        <div class="fb-follow" data-href="https://www.facebook.comKeepHavingAGoodDay" data-layout="standard" data-show-faces="true"></div>
+                    </div>
+                    <div class="col-sm-3">
                         <div class="footer-social-links">
                             <a href="#"><i class="fa fa-facebook"></i></a>
                             <a href="#"><i class="fa fa-instagram"></i></a>
