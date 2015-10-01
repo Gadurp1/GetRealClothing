@@ -8,6 +8,7 @@
         <meta property="og:title" content="{{$blog->name}}" />
         <meta property="og:description" content="{!! $blog->content !!}" />
         <meta property="og:type" content="article" />
+        <meta property="og:url" content="{{\Request::url()}}" 
         <meta property="article:author" content="https://www.facebook.com/KeepHavingAGoodDay" />
         <meta property="article:publisher" content="https://www.facebook.com/KeepHavingAGoodDay" />
         <meta property="og:image" content="{{asset($blog->image)}}" />
