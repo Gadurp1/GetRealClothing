@@ -13,10 +13,10 @@
                 <div class="hs-title-size-4 font-alt mb-40">
                    Get Real Clothing
                 </div>
-                <a href="#about" class="section-scroll btn btn-border-w btn-round"><i  style="font-size:24px"  class="fa fa-fw"></i></a>
-                <a href="#about" class="section-scroll btn btn-border-w btn-round"><i style="font-size:24px" class="fa fa-fw"></i></a>
+                <a href="https://www.youtube.com/user/JacobLindenEditor" class="section-scroll btn btn-border-w btn-round"><i  style="font-size:24px"  class="fa fa-fw"></i></a>
+                <a href="https://www.facebook.com/KeepHavingAGoodDay?fref=ts" class="section-scroll btn btn-border-w btn-round"><i style="font-size:24px" class="fa fa-fw"></i></a>
 
-                <a href="#about" class="section-scroll btn btn-border-w btn-round"><i style="font-size:24px" class="fa fa-fw"></i></a>
+                <a href="https://instagram.com/getrealclothing/" class="section-scroll btn btn-border-w btn-round"><i style="font-size:24px" class="fa fa-fw"></i></a>
 
             </div>
         </div>
