@@ -1,4 +1,4 @@
-@extends('welcome')
+@extends('blog.default')
 
 <!-- Modal -->
 <div id="myModal" class="modal fade" role="dialog">
