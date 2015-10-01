@@ -18,7 +18,7 @@ Route::post('auth/login', 'Auth\AuthController@postLogin');
 Route::get('auth/logout', 'Auth\AuthController@getLogout');
 Route::get('/', function () {
 
-	$blog=\App\Blog::where('status','publish')->Take(3)->get();
+	$blog=\App\Blog::where('status','publish')->Take(3)->latest()->get();
     	return view('home',compact('blog'));
 
 });
