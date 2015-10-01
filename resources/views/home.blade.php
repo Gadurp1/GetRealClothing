@@ -53,23 +53,22 @@
             <!-- Portfolio list start -->
             <ul id="works-grid" class="works-grid works-grid-gut works-grid-3 works-hover-w">
                     
-				@foreach($blog as $blog_item)
+		@foreach($blog as $blog_item)
 	                <!-- Portfolio item start -->
 	                <li class="work-item marketing photography">
-	                    <a href="blog/{{$blog_item->id}}">
+	                    <a href="blog/{{$blog_item->slug}}">
 	                        <div class="work-image">
 	                            <img class="col-md-12"  src="{{ asset($blog_item->image)}}" alt="">
 	                        </div>
 	                        <div class="work-caption font-alt">
 	                            <h3 class="work-title">{{$blog_item->name}}</h3>
 	                            <div class="work-descr">
-	                                Marketing
 	                            </div>
 	                        </div>
 	                    </a>
 	                </li>
 	                <!-- Portfolio item end -->
-				@endforeach
+		@endforeach
 
 
 
