@@ -65,7 +65,7 @@
       <div class="container">
         <div class="col-md-8 col-md-offset-2" >
            <!-- Trigger the modal with a button -->
-<button type="button" class="btn btn-info col-md-12 btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
+<button type="button" class="btn btn-info col-md-12 btn-lg" data-toggle="modal" data-target="#myModal">Add Image Gallery</button>
 
 <hr>
        {!! Form::label('category','Category') !!}
