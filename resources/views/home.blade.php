@@ -22,7 +22,7 @@
         </div>
 
     </section >
-    <!-- Home end -->
+<!-- Home end -->
 
 
     <!-- Wrapper start -->
