@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta property="og:locale" content="en_US" /> 
         <meta property="og:title" content="{{$blog->name}}" />
-        <meta property="og:description" content="{{$blog->content}}" />
+        <meta property="og:description" content="{!! $blog->content !!}" />
         <meta property="og:type" content="article" />
         <meta property="article:author" content="https://www.facebook.com/KeepHavingAGoodDay" />
         <meta property="article:publisher" content="https://www.facebook.com/KeepHavingAGoodDay" />
