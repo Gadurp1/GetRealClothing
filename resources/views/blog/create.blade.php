@@ -36,12 +36,7 @@
       </div>
     </section>
 
-     <form action="photo"
-      class="dropzone"
-      id="my-awesome-dropzone">
-
-{{csrf_field()}}
-</form> 
+ 
 {!! Form::open() !!}
     <!-- Post single start -->
     <section class="module-small">
