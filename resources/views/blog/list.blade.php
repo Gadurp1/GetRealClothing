@@ -13,8 +13,7 @@
 
                         <h2 class="module-title font-alt">Latest Posts</h2>
                         <div class="module-subtitle font-serif">
-                            A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.
-                        </div>
+	Check Out What Get Real & Some of Our Homies Have Been Up to                        </div>
 
                     </div>
 
