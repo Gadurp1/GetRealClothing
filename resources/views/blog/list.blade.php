@@ -22,8 +22,30 @@
                 <div class="col-md-8">
 
                     <!-- Post item start -->
-                    
-                    @foreach($blog as $item)
+                    @if(\Auth::guest())
+                    @foreach($blog->where('status','publish') as $item)
+                        <div class="mb-5">
+                                <a href="blog/{{$item->slug}}"><img class="" src="{{asset($item->image)}}" alt=""></a>
+                            <div class=" font-alt">
+                                <h2 class=""><a href="blog/{{$item->slug}}">{{$item->name}}</a></h2>
+                                <div class="post-meta">
+                                    By <a href="#">Mark Stone</a> |{{$item->created_at}} | 3 Comments
+                                </div>
+                            </div>
+                            <div class="post-entry">
+                            </div>
+                            <div class="post-more">
+                                <a href="blog/{{$item->slug}}" class="more-link">Read more</a>
+                            </div>
+
+                    	</div>
+                    	<br></br>
+                    	<!-- Post item end -->
+                    	@endforeach
+
+                        @else
+                        
+			@foreach($blog as $item)
                         <div class="mb-5">
                                 <a href="blog/{{$item->slug}}"><img class="" src="{{asset($item->image)}}" alt=""></a>
                             <div class=" font-alt">
@@ -42,11 +64,8 @@
                     	<br></br>
                     	<!-- Post item end -->
                     @endforeach
+                        @endif
 
-
-                    
-
-                    
                 </div><!-- .row -->
 
 <!-- Sidebar column start -->
