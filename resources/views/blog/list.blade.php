@@ -29,7 +29,7 @@
                             <div class=" font-alt">
                                 <h2 class=""><a href="blog/{{$item->slug}}">{{$item->name}}</a></h2>
                                 <div class="post-meta">
-                                    By <a href="#">Mark Stone</a> |{{$item->created_at}} | 3 Comments
+                                    By <a href="#"></a> |{{$item->created_at}} | 3 Comments
                                 </div>
                             </div>
                             <div class="post-entry">
@@ -51,7 +51,7 @@
                             <div class=" font-alt">
                                 <h2 class=""><a href="blog/{{$item->slug}}">{{$item->name}}</a></h2>
                                 <div class="post-meta">
-                                    By <a href="#">Mark Stone</a> |{{$item->created_at}} | 3 Comments
+                                    By <a href="#"></a> |{{$item->created_at}} | 3 Comments
                                 </div>
                             </div>
                             <div class="post-entry">
