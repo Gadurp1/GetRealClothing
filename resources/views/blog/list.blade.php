@@ -33,7 +33,6 @@
                                 </div>
                             </div>
                             <div class="post-entry">
-                                <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
                             </div>
                             <div class="post-more">
                                 <a href="blog/{{$item->slug}}" class="more-link">Read more</a>
