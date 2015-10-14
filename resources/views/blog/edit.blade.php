@@ -116,12 +116,11 @@
 
                 ],$blog->status, ['class'=>' selectpicker form-control']); 
             !!}
-
+ <hr>
  <button type="submit" class="btn btn-success  btn-block col-md-12">Save New Post!</button>
     <hr>
 
 <br></br>
-    <h1>Add Images Here</h1>
 
 
      <form action="photo"
