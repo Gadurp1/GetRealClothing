@@ -111,8 +111,8 @@
 	    {!! Form::label('status','Status') !!}
             {!! Form::select('status', 
                 [
-                    'publish' => '', 
-                    'draft' => 'Sales', 
+                    'publish' => 'publish', 
+                    'draft' => 'draft', 
 
                 ],$blog->status, ['class'=>' selectpicker form-control']); 
             !!}
