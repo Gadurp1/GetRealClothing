@@ -58,8 +58,8 @@
 
                         		@endif
                         		
-                                    By <a href="#"></a> |{{$item->created_at}} | 3 Comments
-                                    By <a href="#"></a> |{{$item->created_at}} | 3 Comments
+                                    By <a href="#"></a> |{{$item->created_at}} |
+                                   
                                 </div>
                             </div>
                             <div class="post-entry">
