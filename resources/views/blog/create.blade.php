@@ -63,7 +63,7 @@
 
 
 	        {!! Form::label('slug','slug') !!}
-	        {!! Form::text('slug',null,['class'=> 'form-control']) !!}
+	        {!! Form::text('slug',null,['class'=> 'form-control','placeholder'=>'This-Will-Be-The-URL-Dont-Be-Lazy']) !!}
 
    
 
@@ -75,12 +75,12 @@
 
         <hr>
         	{!! Form::label('Tags','Tags') !!}
-	        {!! Form::text('title',null,['class'=> 'form-control']) !!}
+	        {!! Form::text('title',null,['class'=> 'form-control', 'placeholder'=>'Use, commas, to separate, tags']) !!}
 
         <hr>
 
 
-	        {!! Form::label('status','Status') !!}
+	    {!! Form::label('status','Status') !!}
             {!! Form::select('status', 
                 [
                     'publish' => 'publish', 
