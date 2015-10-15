@@ -21,11 +21,24 @@ class BlogController extends Controller
     public function index()
     {
 
+        if(\Auth::guest()){
+
+
+        $blog=\App\Blog::where('status','publish')->latest()->paginate(5);
+
+        $photo=\App\Photo::get();
+
+        }
+
+        else{
+
+        return redirect('/');
+
         $blog=\App\Blog::latest()->paginate(5);
 
         $photo=\App\Photo::get();
 
-
+        }
         return view('blog.list',compact('blog'))->with('photo',$photo);
     }
 
