@@ -70,14 +70,15 @@
 
                     	</div>
                     	<br></br>
-                    	{!! str_replace('/?', '?', $blog->render()) !!} 
+                    	 
                     	<!-- Post item end -->
                     @endforeach
-                        @endif
+                @endif
+		{!! str_replace('/?', '?', $blog->render()) !!}
+                </div>
+                <!-- .row -->
 
-                </div><!-- .row -->
-
-<!-- Sidebar column start -->
+		<!-- Sidebar column start -->
                     <div class="col-sm-4 col-md-3 col-md-offset-1 sidebar">
 
                         <!-- Widget start -->
