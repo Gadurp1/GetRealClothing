@@ -35,15 +35,12 @@ Route::get('Shop', function () {
 Route::get('auth/register', 'Auth\AuthController@getRegister');
 Route::post('auth/register', 'Auth\AuthController@postRegister');
 Route::resource('blog','BlogController');
+Route::resource('photos','PhotosController');
 
 
 // Blog routes...
 Route::post('blog/{id}/photo','BlogController@addPhoto');      // Adding Photos to post
 Route::post('blog/create','BlogController@store');
-Route::get('/Recent-Posts', function () {                      // Blog Feed Page
+Route::resource('/Recent-Posts','BlogController');
 
 
-	$blog=\App\Blog::latest()->paginate(5);
-    	return view('blog.list',compact('blog'));
-
-});

@@ -25,29 +25,8 @@
         <link href="{{ asset('assets/css/style.css')}}" rel="stylesheet">
         <link href="{{ asset('vendors/bower_components/sweetalert/dist/sweetalert2.css')}}" rel="stylesheet">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/4.0.1/dropzone.css" rel="stylesheet">
-        <script src="{{ asset('vendors/bower_components/sweetalert/dist/sweetalert2.min.js')}}"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/dropzone/4.0.1/dropzone.js"></script>
-<script src="{{ asset('vendors/bower_components/sweetalert/dist/sweetalert2.min.js')}}"></script>
- <script src="//code.jquery.com/jquery-1.9.1.js"></script> 
-  <!-- include libraries BS3 -->
-<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" />
-<script type="text/javascript" src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
-<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" />
- 
-<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/codemirror/3.20.0/codemirror.min.css" />
-<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/codemirror/3.20.0/theme/blackboard.min.css">
-<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/codemirror/3.20.0/theme/monokai.min.css">
-<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/codemirror/3.20.0/codemirror.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/codemirror/3.20.0/mode/xml/xml.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/codemirror/2.36.0/formatting.min.js"></script>
-  
-<!-- include summernote css/js-->
-        <link href="{{ asset('vendors/bower_components/summernote/dist/summernote.css')}}" rel="stylesheet">
+ <link href="{{ asset('vendors/bower_components/summernote/dist/summernote.css')}}" rel="stylesheet">
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.6.16/summernote.js"></script>
-
-<!-- Go to www.addthis.com/dashboard to customize your tools -->
-<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-560b5c2d52b4b2a8" async="async"></script>
 
     </head>
     <body>
@@ -112,3 +91,24 @@
     @include('partials.footer')
     </body>
   </html>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/dropzone/4.0.1/dropzone.js"></script>
+<script src="{{ asset('vendors/bower_components/sweetalert/dist/sweetalert2.min.js')}}"></script>
+ <script src="//code.jquery.com/jquery-1.9.1.js"></script> 
+  <!-- include libraries BS3 -->
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" />
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" />
+ 
+<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/codemirror/3.20.0/codemirror.min.css" />
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/codemirror/3.20.0/theme/blackboard.min.css">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/codemirror/3.20.0/theme/monokai.min.css">
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/codemirror/3.20.0/codemirror.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/codemirror/3.20.0/mode/xml/xml.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/codemirror/2.36.0/formatting.min.js"></script>
+  
+<!-- include summernote css/js-->
+        <script src="{{ asset('vendors/bower_components/sweetalert/dist/sweetalert2.min.js')}}"></script>
+       
+<script src="{{ asset('vendors/bower_components/summernote/dist/summernote.js')}}"></script>
+
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-560b5c2d52b4b2a8" async="async"></script>

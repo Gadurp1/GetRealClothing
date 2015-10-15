@@ -14,7 +14,9 @@ class Photo extends Model
 
     	'path',
     	'name',
-    	'thumbnail_path'
+        'thumbnail_path',
+        'caption',
+        'status'
 
     ];
     public static function named(UploadedFile $file)

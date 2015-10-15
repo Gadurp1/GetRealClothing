@@ -31,19 +31,20 @@
 <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-560b5c2d52b4b2a8" async="async"></script>
 
    <!-- Header section start -->
-    <section id="home" class="module-small home-parralax bg-dark-30" data-background="{{asset($blog->image)}}">
+    <section id="home" class="module-small home-parralax bg-dark-30" data-background="@foreach($blog->photos->where('status',2) as $photos ){{asset(''.$photos->path.'')}}@endforeach">
             <div class="container">
 
                 <div class="row">
 
                     <div class="col-sm-6 col-sm-offset-3 text-center ">
-                        <h1 class="module-title font-alt"><strong>{{$blog->name}}</strong></h1>
+                        <h1 class="module-title font-alt"><strong></strong></h1>
            
                         @if(\Auth::guest())
 
 
                         @else
                             <a href="{{$blog->id}}/edit" class=" btn btn-danger">Edit Post</a>
+                            <a href="../photos/{{$blog->id}}" class=" btn btn-danger">Edit Photos</a>
 
 
                             <a class=" btn btn-danger" data-toggle="modal" data-target="#myModal">Delete Post</a>

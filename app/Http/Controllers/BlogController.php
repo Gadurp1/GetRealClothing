@@ -21,8 +21,12 @@ class BlogController extends Controller
     public function index()
     {
 
-        $Blog=\App\Blog::latest()->get();
-        return view('blog.index',compact('Blog'));
+        $blog=\App\Blog::latest()->paginate(5);
+
+        $photo=\App\Photo::get();
+
+
+        return view('blog.list',compact('blog'))->with('photo',$photo);
     }
 
     /**
