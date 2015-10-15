@@ -25,7 +25,7 @@
                     @if(\Auth::guest())
                     @foreach($blog->where('status','publish') as $item)
                         <div class="mb-5">
-                                <a href="blog/{{$item->slug}}"><img class="" src="" alt=""></a>
+                                <a href="blog/{{$item->slug}}"><img class="" src="{{asset($item->image)}}" alt=""></a>
                             <div class=" font-alt">
                                 <h2 class=""><a href="blog/{{$item->slug}}">{{$item->name}}</a></h2>
                                 <div class="post-meta">
@@ -47,7 +47,7 @@
                         
 			@foreach($blog as $item)
                         <div class="mb-5">
-                                <a href="blog/{{$item->slug}}"><img class="" src="" alt=""></a>
+                                <a href="blog/{{$item->slug}}"><img class="" src="{{asset($item->image)}}" alt=""></a>
                             <div class=" font-alt">
                                 <h2 class=""><a href="blog/{{$item->slug}}">{{$item->name}}</a></h2>
                                 <div class="post-meta">

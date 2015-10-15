@@ -37,7 +37,7 @@
                 <div class="row">
 
                     <div class="col-sm-6 col-sm-offset-3 text-center ">
-                        <h1 class="module-title font-alt"><strong></strong></h1>
+                        <h1 class="module-title font-alt"><strong>{{$blog->name}}</strong></h1>
            
                         @if(\Auth::guest())
 
