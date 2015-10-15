@@ -51,6 +51,14 @@
                             <div class=" font-alt">
                                 <h2 class=""><a href="blog/{{$item->slug}}">{{$item->name}}</a></h2>
                                 <div class="post-meta">
+                                	
+                                	@if($item->status == 'draft')
+
+                            			<label class="label label-danger">Draft</label>
+
+                        		@endif
+                        		
+                                    By <a href="#"></a> |{{$item->created_at}} | 3 Comments
                                     By <a href="#"></a> |{{$item->created_at}} | 3 Comments
                                 </div>
                             </div>
@@ -62,6 +70,7 @@
 
                     	</div>
                     	<br></br>
+                    	{!! str_replace('/?', '?', $blog->render()) !!} 
                     	<!-- Post item end -->
                     @endforeach
                         @endif
