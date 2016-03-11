@@ -38,7 +38,7 @@
 
                     <div class="col-sm-6 col-sm-offset-3 text-center ">
                         <h1 class="module-title font-alt"><strong>{{$blog->name}}</strong></h1>
-           
+
                         @if(\Auth::guest())
 
 
@@ -68,7 +68,7 @@
                     <!-- Content column start -->
                     <div class="col-md-8 col-md-offset-2" >
 
-        
+
 
                         <!-- Post start -->
                         <div class="post">
@@ -83,7 +83,7 @@
 
                             </div>
                             <div class="post-entry">
-                                {!! $blog->content !!}      
+                                {!! $blog->content !!}
 
                             <hr>
                             <!-- Portfolio start -->
@@ -92,7 +92,7 @@
                                 <!-- Portfolio list start -->
                                 <ul id="works-grid" class="works-grid works-grid-masonry works-grid-3 works-hover-w">
 
-                                @foreach($blog->photos as $photo)
+                                @foreach($blog->photos->where('status','!',2) as $photo)
                                 <!-- Gallery item start -->
                                 <li class="work-item illustration webdesign" style="margin:0px;padding:px;">
                                  <div class="gallery-item" style="margin:0px;padding:px;">
@@ -103,20 +103,20 @@
                                         <div class="work-caption font-alt">comp
                                             <h3 class="work-title">Launch Slideshow</h3>
                                             <div class="work-descr">
-                                               
+
                                             </div>
                                         </div>
                                     </a>
                                     </div>
                                 </li>
-                                @endforeach     
+                                @endforeach
                                 </ul>
-                            </section>                                                                            
+                            </section>
                             </div>
 
 
 
-  
+
                         </div>
                         <!-- Post end -->
 
@@ -126,7 +126,7 @@
                             <script type="text/javascript">
                                 /* * * CONFIGURATION VARIABLES * * */
                                 var disqus_shortname = 'getrealsk8';
-                                
+
                                 /* * * DON'T EDIT BELOW THIS LINE * * */
                                 (function() {
                                     var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
@@ -138,15 +138,10 @@
                         </div>
                     <!-- Content column end -->
                     </div>
-                </div></div></div></div>    
+                </div></div></div></div>
         <!-- Widgets end -->
-    
+
         <!-- Divider -->
         <hr class="divider-d">
         <!-- Divider -->
     @stop
-
-
-
-
-
