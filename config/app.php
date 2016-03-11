@@ -137,7 +137,7 @@ return [
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
         'Illuminate\Html\HtmlServiceProvider',
-'Maatwebsite\Excel\ExcelServiceProvider',
+        'Maatwebsite\Excel\ExcelServiceProvider',
 
 
         /*
@@ -198,10 +198,11 @@ return [
         'URL'       => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View'      => Illuminate\Support\Facades\View::class,
-            'Form' => 'Illuminate\Html\FormFacade',
-      'Html' => 'Illuminate\Html\HtmlFacade',
-      'Excel' => 'Maatwebsite\Excel\Facades\Excel',
-      'Image' => 'Intervention\Image\Facades\Image'
+        'Form' => 'Illuminate\Html\FormFacade',
+        'Html' => 'Illuminate\Html\HtmlFacade',
+        'Excel' => 'Maatwebsite\Excel\Facades\Excel',
+        'Image' => 'Intervention\Image\Facades\Image',
+        
 
     ],
 

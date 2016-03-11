@@ -22,23 +22,22 @@ class BlogController extends Controller
     {
 
         if(\Auth::guest()){
-
-
-        $blog=\App\Blog::where('status','publish')->latest()->paginate(5);
-
-        $photo=\App\Photo::get();
+            
+            $blog=\App\Blog::where('status','publish')->latest()->paginate(5);
+            $photo=\App\Photo::get();
 
         }
 
         else{
 
-        return redirect('/');
+            return redirect('/');
 
-        $blog=\App\Blog::latest()->paginate(5);
+            $blog=\App\Blog::latest()->paginate(5);
 
-        $photo=\App\Photo::get();
+            $photo=\App\Photo::get();
 
         }
+
         return view('blog.list',compact('blog'))->with('photo',$photo);
     }
 
@@ -56,13 +55,11 @@ class BlogController extends Controller
 
         }
 
-
         else{
 
             return view('blog.create' );
 
         }
-        
 
     }
 
@@ -72,9 +69,6 @@ class BlogController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-
-
-
 
     public function store(Requests\BlogRequest $request)
     {
@@ -106,12 +100,10 @@ class BlogController extends Controller
     public function show($slug)
     {
         
-    $blog=\App\Blog::whereslug($slug)->first();
-    return view('blog.show')->with('blog',$blog);
-
+        $blog=\App\Blog::whereslug($slug)->first();
+        return view('blog.show')->with('blog',$blog);
 
     }
-
 
     /**
      * Show the form for editing a post.
@@ -128,13 +120,10 @@ class BlogController extends Controller
     }
 
         // Show a page to edit and existing blog
-
         $blog=Blog::findorFail($id);
-
         return view('blog.edit',compact('blog'));
 
     }
-
 
     /**
      * Update the post in storage.
@@ -160,6 +149,7 @@ class BlogController extends Controller
         return redirect('blog/'.$blog->slug.'');
 
     }
+
     public function addPhoto($id, Request $request)
     {
 
@@ -169,21 +159,13 @@ class BlogController extends Controller
 
         }
 
-       $file=$request->file('file');
-
-       $name=time().$file->getClientOriginalName();
-
+        $file=$request->file('file');
+        $name=time().$file->getClientOriginalName();
         $file->move('blog/photos',$name);
-
         $blog=Blog::findOrFail($id);
-
-       $blog->photos()->create(['path' => 'blog/photos/'.$name.'']);
-
+        $blog->photos()->create(['path' => 'blog/photos/'.$name.'']);
 
     }
-
-
-
 
     /**
      * Remove the specified resource from storage.
