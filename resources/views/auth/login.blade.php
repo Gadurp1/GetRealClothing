@@ -2,7 +2,7 @@
 
 @section('content')
 
-<div class="module" style=" background: url({{asset('blog/photos/1443563289IMG_0267.jpg')}}) no-repeat center center fixed; 
+<div class="module" style=" background: url({{asset('blog/photos/1443563289IMG_0267.jpg')}}) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -53,9 +53,9 @@
 <hr>
                         <div class="form-group">
                             <div class="col-md-6 col-md-offset-4">
-                                <button type="submit" class="btn btn-primary">Login</button>
+                                <button type="submit" class="btn btn-default">Login</button>
 
-                                <a class="btn  btn-primary pull-right" href="{{ url('auth/register') }}">Register?</a>
+                                <a class="btn  btn-primary pull-right hidden" href="{{ url('auth/register') }}">Register?</a>
                             </div>
                         </div>
                     </form>
