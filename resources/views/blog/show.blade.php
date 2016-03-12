@@ -92,7 +92,7 @@
                                 <!-- Portfolio list start -->
                                 <ul id="works-grid" class="works-grid works-grid-masonry works-grid-3 works-hover-w">
 
-                                @foreach($blog->photos->where('status','!',2) as $photo)
+                                @foreach($blog->photos->where('status','!=',2) as $photo)
                                 <!-- Gallery item start -->
                                 <li class="work-item illustration webdesign" style="margin:0px;padding:px;">
                                  <div class="gallery-item" style="margin:0px;padding:px;">
