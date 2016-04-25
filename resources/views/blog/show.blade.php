@@ -4,7 +4,7 @@
 
 
 <!-- Modal -->
-<div id="myModal" class="modal fade" role="dialog">
+<div id="myModal" class="modal" role="dialog">
   <div class="modal-dialog">
 
     <!-- Modal content-->
@@ -64,11 +64,7 @@
             <div class="container">
 
                 <div class="row">
-       {!! Form::open([ 'method'  => 'delete', 'route' => [ 'blog.destroy', $blog->id ] ]) !!}
 
-            <button class="btn btn-lg btn-block btn-danger" type="submit">Yes, Delete Post!</button>
-
-        {!! Form::close() !!}
                     <!-- Content column start -->
                     <div class="col-md-8 col-md-offset-2" >
 
