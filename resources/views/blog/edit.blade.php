@@ -1,4 +1,4 @@
-@extends('welcome')    
+@extends('welcome')
 <!-- Modal -->
 <div id="myModal" class="modal fade" role="dialog">
   <div class="modal-dialog">
@@ -28,8 +28,8 @@
 
 @if($errors->any())
   <script>
-    swal({   title: 'You Missed Something!',   text: '@foreach($errors->all() as $error) {{$error}}  @endforeach',   type: 'error',   confirmButtonText: 'Cool' });   
-</script>  
+    swal({   title: 'You Missed Something!',   text: '@foreach($errors->all() as $error) {{$error}}  @endforeach',   type: 'error',   confirmButtonText: 'Cool' });
+</script>
 
 
 
@@ -45,7 +45,7 @@
         <div class="row">
 
           <div class="col-sm-6 col-sm-offset-3">
-            
+
             <h1 class="module-title font-alt"><strong>New Post</strong></h1>
             <div class="module-subtitle font-serif mb-0">
               Fill out the info below to get things started...  Shit simple dooohhhh.
@@ -69,21 +69,26 @@
 
 <hr>
        {!! Form::label('category','Category') !!}
-            {!! Form::select('CatID', 
+            {!! Form::select('CatID',
                 [
-                    '1' => 'Skateboarding', 
+                    '1' => 'Skateboarding',
                     '2' => 'Music',
                    '3' => 'Events',
 
 
-                ],null, ['class'=>' selectpicker form-control']); 
+                ],null, ['class'=>' selectpicker form-control']);
             !!}
-    	<hr> 
+    	<hr>
 
             {!! Form::label('Youtube Link','YouTube Link') !!}
             {!! Form::text('video_url',$blog->video_url,['class'=> 'form-control']) !!}
+            <hr> 	
 
-    	<hr> 	
+                 	 {!! Form::label('image','image') !!}
+      	        {!! Form::text('image',$blog->image,['class'=> 'form-control']) !!}
+
+              <hr>
+    	<hr>
 
            	 {!! Form::label('name','name') !!}
 	        {!! Form::text('name',$blog->title,['class'=> 'form-control']) !!}
@@ -93,7 +98,7 @@
 	        {!! Form::label('slug','slug') !!}
 	        {!! Form::text('slug',$blog->slug,['class'=> 'form-control']) !!}
 
-   
+
 
         <hr>
 
@@ -109,12 +114,12 @@
 
 
 	    {!! Form::label('status','Status') !!}
-            {!! Form::select('status', 
+            {!! Form::select('status',
                 [
-                    'publish' => 'publish', 
-                    'draft' => 'draft', 
+                    'publish' => 'publish',
+                    'draft' => 'draft',
 
-                ],$blog->status, ['class'=>' selectpicker form-control']); 
+                ],$blog->status, ['class'=>' selectpicker form-control']);
             !!}
  <hr>
  <button type="submit" class="btn btn-success  btn-block col-md-12">Save New Post!</button>
@@ -136,18 +141,18 @@
 
 
 <script src="{{ asset('assets/js/summernote.min.js') }}"></script>
-<script src="{{ asset('assets/js/sweetalert2.min.js') }}"></script> 
+<script src="{{ asset('assets/js/sweetalert2.min.js') }}"></script>
     {!! Form::close() !!}
         </div><!-- .row -->
-  
+
       </div>
     </div>
     <!-- Widgets end -->
-  
+
     <!-- Divider -->
-    <hr class="divider-d">   
+    <hr class="divider-d">
 <script>
-    $(document).ready(function() {  
+    $(document).ready(function() {
         $('#summernote').summernote({
             height: 500
         });
